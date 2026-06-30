@@ -34,9 +34,6 @@ A signal is considered active only when its value is greater than or equal to 20
 
 Let `S` be the set of components where:
 
-```text
-value >= 20
-```
 
 The package risk is calculated as:
 
@@ -53,9 +50,7 @@ weight_i / Σ(weights of active components)
 
 This approach ensures that:
 
-* weak signals do not artificially inflate risk;
 * missing or zero-value signals do not suppress the score;
-* only meaningful risk indicators contribute to the final score.
 
 If no component satisfies the activation threshold, the package risk is defined as zero.
 
